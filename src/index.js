@@ -6,10 +6,9 @@ function sendMsg() {
   );
   xhr.send();
   xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4) {
-      if (xhr.status === 200) {
-        console.log(xhr.responseText);
-      }
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      let resp_json = JSON.parse(this.responseText);
+      console.log(resp_json);
     }
   };
 }
