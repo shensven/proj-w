@@ -8,6 +8,7 @@ function sendMsg() {
     if (xhr.readyState === 4 && xhr.status === 200) {
       var resp_json = JSON.parse(this.responseText);
       console.log(resp_json);
+      document.querySelector("#preloader").innerHTML = "\n        <p>" + resp_json.now.text + "</p>      \n      ";
     }
   };
 }

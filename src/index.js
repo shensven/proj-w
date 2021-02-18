@@ -9,6 +9,9 @@ function sendMsg() {
     if (xhr.readyState === 4 && xhr.status === 200) {
       let resp_json = JSON.parse(this.responseText);
       console.log(resp_json);
+      document.querySelector("#preloader").innerHTML = `
+        <p>${resp_json.now.text}</p>      
+      `;
     }
   };
 }
