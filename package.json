@@ -18,5 +18,8 @@
   "homepage": "https://github.com/shensven/proj-w#readme",
   "devDependencies": {
     "babel-preset-es2015": "^6.24.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0"
   }
 }
