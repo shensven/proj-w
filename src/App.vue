@@ -24,7 +24,7 @@ export default {
             lang: "en"
           }
         })
-        .then(response => console.log(response));
+        .then(response => console.log(response.data.now.text));
     }
   }
 };
