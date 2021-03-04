@@ -1,6 +1,6 @@
 # proj-w
 
-> A weather project based on Vue.js
+> A weather demo based on Vue.js
 
 ## Build Setup
 
